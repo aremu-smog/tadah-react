@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react'
-import Layout from '../components/layout/Layout'
+// import Layout from '../components/layout/Layout'
 import Task from './inc/Task'
-import AddTask from './inc/AddTask'
+
 // import axios from 'axios'
 
 function Home(){
@@ -22,15 +22,12 @@ function Home(){
     )
     return (
         <div>
-            <Layout>
-            <AddTask />
-            <hr/>
+            
             <div className="container intro">
                 <h3 className="heading">Recent Tasks</h3>
                 <p>Here is the list of your recent tasks</p>
             </div>
             {tasks.map(task => <Task key={task.id} id={task.id} title={task.name} due={task.due} status={task.status} />)}
-            </Layout>
         </div>
     )
 }

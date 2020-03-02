@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from './Header'
+import {Link} from 'react-router-dom'
 
 function Layout({children}){
 
@@ -10,6 +11,12 @@ function Layout({children}){
 
                 <div>{children}</div>
             </div>
+            <div>
+            <Link to="/add_task"><div class="create-task">
+                <img src="/img/plus icon.svg" alt="Create Task Icon" />
+                </div>
+            </Link>
+    </div>
             
         </div>
         
