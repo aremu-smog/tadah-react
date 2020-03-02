@@ -12,7 +12,7 @@ function Layout({children}){
                 <div>{children}</div>
             </div>
             <div>
-            <Link to="/add_task"><div class="create-task">
+            <Link to="/add_task"><div className="create-task">
                 <img src="/img/plus icon.svg" alt="Create Task Icon" />
                 </div>
             </Link>

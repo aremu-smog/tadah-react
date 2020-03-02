@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
+// import {BrowserRouter as Router, Link, Route} from 'react-router-dom'
 
 function Task(props){
 
@@ -9,7 +9,7 @@ function Task(props){
         }
         fetch("http://localhost:8000/api/task/"+id,options)
         .then(res => res.json())
-        .then(data => {alert("Task"+id+" deleted")})
+        .then(data => {alert(data.response)})
         .catch(errors => {console.log(errors)})
     }
     return(
@@ -23,7 +23,7 @@ function Task(props){
                         <span className="due">{props.due}</span>
                     </div>
                     <div className="col-3" >
-                        <span className="status status-progress" onClick={()=>deleteTask(props.id)}>{props.status}</span>
+                        <span className="status status-progress" onClick={()=>deleteTask(props.id)}>Delete</span>
                     </div>
                 </div>
             </div>
