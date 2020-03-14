@@ -9,7 +9,7 @@ function Task(props){
 
     useEffect(
         () => {
-            fetch('http://tadah.herokuapp.com/api/task/2')
+            fetch('https://tadah.herokuapp.com/api/task/2')
             .then(res => res.json())
             .then(data => setTask(data))
             .catch(errors => console.log(errors))

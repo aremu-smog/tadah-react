@@ -10,7 +10,7 @@ function Home(){
 
     useEffect(
         () => {
-            fetch('http://tadah.herokuapp.com/api/task')
+            fetch('https://tadah.herokuapp.com/api/task')
             .then(res => res.json())
             .then(data => setTasks(data))
             .catch(errors => console.log(errors))
