@@ -1,5 +1,5 @@
 import React from 'react';
-import './app.css';
+import './App.css';
 import Layout from './components/layout/Layout'
 import Home from './pages/Home'
 // import AddTask from './inc/AddTask'
